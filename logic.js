@@ -338,7 +338,7 @@ function canMoveRight() {
 
 function canMoveUp() {
 	for (let c = 0; c < columns; c++) {
-		for (let r = 1; r < rows - 2; r++) {
+		for (let r = 1; r < rows; r++) {
 			console.log('${c} - ${r}');
 			if (board[r][c] !== 0) {
 				if (board[r-1][c] === 0 || board[r-1][c] === board [r][c]) {
